@@ -1,9 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <meta charset="utf-8"/>
+    <meta name="viewpoint" ::content="width=device-width, initial-scale=1.0">
+<style>
+    *{
+        box-sizing: border-box;
+    }
+.header{
+    text-align: center;
+    padding: 25px;
+    font-size: 200%;
+}
+.maincontainer{
+    display: table;
+    width: 100%;
+}
+.leftcol{
+    width: 25%;
+    float: left;
+    border-style: groove;
+    padding: 15px;
+    margin: 15px;
+    background-color: aquamarine;
+    display: table-cell;
+}
+.maincontent{
+    text-align: center;
+    width: 25%;
+    padding: 15px;
+    border-style: groove;
+    background-color: lightskyblue;
+    display: table-cell;
+}
+.rightcol{
+    width: 25%;
+    float: right;
+    border-style: groove;
+    padding: 15px;
+    margin: 15px;
+    background-color: lightcoral;
+    display: table-cell;
+}
+.maincontainer:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+.footer{
+    background-color: darkmagenta;
+    text-align: right;
+}
+</style>
 </head>
 <body>
-    <h1>Heeeeeeeeeellooooooooooooooooooooooooooo</h1>
+
+    <div class="header">I like cats</div>
+    
+    <div class="navbar">
+        <a href="#">Menu item 1</a>
+        <div class="dropmenu">
+            <button class="dmbutton">Menu item 2</button>
+            <div class="dropmenucontent">
+                <a href="#">Sub menu item 1</a>
+                <a href="#">Sub menu item 2</a>
+            </div>
+        </div>
+        <a href="#">Menu item 3</a>
+    </div>
+
+    <div class="maincontainer">
+
+     <div class="leftcol">Cats are very nice</div> 
+
+     <div class="maincontent">I love cats. Cats are the best. No one can tell me otherwise</div>
+
+     <div class="rightcol">Cats are better than dogs</div> 
+
+    </div>
+<div class="footer">And finally, cats are cute, thank you</div>
 </body>
 </html>
